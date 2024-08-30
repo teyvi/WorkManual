@@ -48,14 +48,14 @@ const DocSection = ({ section, level = 0 }) => {
 
 const FeatureDocumentation = ({ title, description, sections }) => {
   return (
-    <div className="max-w-3xl  bg-white shadow-lg  overflow-hidden scroll-smooth">
-      <div className=" bg-[#21a179] p-6 text-white">
+    <div className="w-full bg-white shadow-lg  overflow-hidden scroll-smooth flex flex-col items-start">
+      <div className=" bg-[#21a179] p-6 text-white w-full">
         <h2 className="text-2xl font-bold flex items-center">
           {title}
         </h2>
         <p className="mt-2 text-gray-100">{description}</p>
       </div>
-      <div className="divide-y divide-gray-200">
+      <div className="w-full divide-y divide-gray-200">
         {sections.map((section, index) => (
           <DocSection key={index} section={section} />
         ))}
