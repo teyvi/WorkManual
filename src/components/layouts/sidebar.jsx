@@ -2,7 +2,7 @@ import React from 'react'
 
 function Sidebar() {
   return (
-    <div className="hidden md:flex flex-col w-64 bg-[#21a179] scroll-smooth">
+    <div className="hidden md:flex flex-col w-64 bg-[#21a179] overflow-auto">
         <div className="flex items-center justify-center h-16 bg-[#21a179]">
           <span className="text-white text-l uppercase">
             TENDO DOCUMENTATION

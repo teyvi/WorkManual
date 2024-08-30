@@ -9,7 +9,7 @@ const DocSection = ({ section, level = 0 }) => {
   };
 
   return (
-    <div className={`mt-${level * 2} border-l-${level * 2} border-gray-200 font-serif scroll-smooth`}>
+    <div className={`mt-${level * 2} border-l-${level * 2} border-gray-200 font-serif overflow-auto`}>
       <button
         className="flex justify-between items-center w-full text-left p-4 hover:bg-gray-50"
         onClick={toggleSection}
@@ -48,8 +48,8 @@ const DocSection = ({ section, level = 0 }) => {
 
 const FeatureDocumentation = ({ title, description, sections }) => {
   return (
-    <div className="w-full bg-white shadow-lg  overflow-hidden scroll-smooth flex flex-col items-start">
-      <div className=" bg-[#21a179] p-6 text-white w-full">
+    <div className="w-full bg-white overflow-auto flex flex-col items-start">
+      <div className=" bg-[#21a179] p-6 text-white w-full sticky top-0">
         <h2 className="text-2xl font-bold flex items-center">
           {title}
         </h2>
