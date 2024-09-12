@@ -4,7 +4,7 @@ function Dashboard() {
   return (
     <div className="flex flex-col flex-1 overflow-y-auto">
       <div className="p-4">
-        <h1 className="text-black text-xl uppercase mt-16 mx-16 text-center">
+        <h1 className="text-black text-xl uppercase mt-16 mx-16 text-center mb-4">
           Welcome to Tendo Docs!
         </h1>
         <div>

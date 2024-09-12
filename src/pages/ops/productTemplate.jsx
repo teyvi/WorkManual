@@ -1,9 +1,20 @@
 import React from 'react'
-import FeatureDocumentation from '../../components/layouts/docsection';
-import { Book,ShoppingCart, ShieldCheck,ShieldOff, UserRound, Pen, CircleEllipsis, Replace } from 'lucide-react';
+import FeatureDocumentation from '../../components/layouts/docsection'
+import {
+    Book,
+    ShoppingCart,
+    ShieldCheck,
+    ShieldOff,
+    UserRound,
+    Pen,
+    CircleEllipsis,
+    Replace,
+    CircleX,
+  } from "lucide-react";
 
+const ProductTemplate = () => {
+    const ProductTemplateDocs = {
 
-function ExpressOrders() {const expressOrdersDoc = {
     title: "Express Orders",
     description: "Learn how to manage and process express orders efficiently.",
     sections: [
@@ -28,7 +39,7 @@ function ExpressOrders() {const expressOrdersDoc = {
               "After getting the particular order you want, click on ACTIONS on the far right to check the status of recent orders, manage returns, and download invoices",
               "ORDER DETAILS: This has details on active orders and option to show the status of that order ie, pending, accepted, supplier notified etc",
               "RESELLER INVOICE: Show the invoice for the reseller and an option to print the invoice",
-              "CUSTOMER INVOICE: Show the invoice of the customer and an option to print the invoice",
+              "RESELLER INVOICE: Show the invoice of the customer and an option to print the invoice",
               ""
             ]
           },
@@ -81,20 +92,21 @@ function ExpressOrders() {const expressOrdersDoc = {
             icon: <CircleEllipsis size={18} />,
             content: "Shows more operations that can be performed on the order",
             steps: [
-              "VIEW CART",
-              "EDIT SKU",
-              "ADD NOTES",
-              "DELIVERY MESSAGE",
-              "PICKUP MESSAGE"
+              "text",
+              "text",
+              "text",
+              "text",
+              "text"
             ],
             note: "Remember: Express orders have a 2-hour processing time target from the moment they are received."
           }
         ]
       },
     ]
-  };
 
-  return <FeatureDocumentation {...expressOrdersDoc} />;
+
+    }
+  return <FeatureDocumentation{...ProductTemplateDocs}/>
 };
 
-export default ExpressOrders;
+export default ProductTemplate;

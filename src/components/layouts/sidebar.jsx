@@ -1,11 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Sidebar() {
   return (
     <div className="hidden md:flex flex-col w-64 bg-[#21a179] overflow-auto">
         <div className="flex items-center justify-center h-16 bg-[#21a179]">
           <span className="text-white text-l uppercase">
-            TENDO DOCUMENTATION
+            <Link to="/">
+            TENDO DOCUMENTATION </Link>
           </span>
         </div>
         <div className="flex flex-col scroll-smooth ">
@@ -87,13 +89,16 @@ function Sidebar() {
                         </summary>
                         <ul class="pl-2 my-4 space-y-4 text-xs">
                           <li>
-                            <a href="/account/profile">Profile</a>
+                            <a href="/account/reseller">Reseller</a>
                           </li>
                           <li>
-                            <a href="/account/settings">Settings</a>
+                            <a href="/account/supplier">Supplier</a>
                           </li>
                           <li>
-                            <a href="/account/billing">Billing</a>
+                            <a href="/account/shops">Shops</a>
+                          </li>
+                          <li>
+                            <a href="/account/campaigns">Campaigns</a>
                           </li>
                         </ul>
                       </details>
@@ -149,13 +154,16 @@ function Sidebar() {
                         </summary>
                         <ul class="pl-2 my-4 space-y-4 text-xs">
                           <li>
-                            <a href="/marketing/campaigns">Campaigns</a>
+                            <a href="/account/marketing">Marketing</a>
                           </li>
                           <li>
-                            <a href="/marketing/analytics">Analytics</a>
+                            <a href="/account/coupon">Coupon</a>
                           </li>
                           <li>
-                            <a href="/marketing/social">Social Media</a>
+                            <a href="/account/appsection">App Section</a>
+                          </li>
+                          <li>
+                            <a href="/account/producttemplate">ProductTemplate</a>
                           </li>
                         </ul>
                       </details>

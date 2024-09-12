@@ -1,4 +1,4 @@
-{const expressOrdersDoc = {
+
     title: "Express Orders",
     description: "Learn how to manage and process express orders efficiently.",
     sections: [
@@ -87,7 +87,3 @@
         ]
       },
     ]
-  };
-
-  return <FeatureDocumentation {...expressOrdersDoc} />;
-};
