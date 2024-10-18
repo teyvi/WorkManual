@@ -63,6 +63,9 @@ function Sidebar() {
                           <li>
                             <a href="/offlineorders">Offline Orders</a>
                           </li>
+                          <li>
+                            <a href="/digitalorders">Digital Orders</a>
+                          </li>
                         </ul>
                       </details>
                     </li>
@@ -123,13 +126,19 @@ function Sidebar() {
                         </summary>
                         <ul class="pl-2 my-4 space-y-4 text-xs">
                           <li>
-                            <a href="/inventory/stock">Stock Levels</a>
+                            <a href="/inventory/products">Products</a>
                           </li>
                           <li>
-                            <a href="/inventory/reorder">Reorder Points</a>
+                            <a href="/inventory/digital-products">Digital Products</a>
                           </li>
                           <li>
-                            <a href="/inventory/suppliers">Suppliers</a>
+                            <a href="/inventory/discounts">Discounts</a>
+                          </li>
+                          <li>
+                            <a href="/inventory/categories">Categories</a>
+                          </li>
+                          <li>
+                            <a href="/inventory/collections">Collections</a>
                           </li>
                         </ul>
                       </details>
@@ -154,7 +163,7 @@ function Sidebar() {
                         </summary>
                         <ul class="pl-2 my-4 space-y-4 text-xs">
                           <li>
-                            <a href="/account/marketing">Marketing</a>
+                            <a href="/account/marketing">Marketing Notification</a>
                           </li>
                           <li>
                             <a href="/account/coupon">Coupon</a>
@@ -163,7 +172,7 @@ function Sidebar() {
                             <a href="/account/appsection">App Section</a>
                           </li>
                           <li>
-                            <a href="/account/producttemplate">ProductTemplate</a>
+                            <a href="/account/producttemplate">Product Template</a>
                           </li>
                         </ul>
                       </details>
@@ -188,13 +197,10 @@ function Sidebar() {
                         </summary>
                         <ul class="pl-2 my-4 space-y-4 text-xs">
                           <li>
-                            <a href="/location/stores">Store Locations</a>
+                            <a href="location/delivery-location">Delivery Locations</a>
                           </li>
                           <li>
-                            <a href="/location/warehouses">Warehouses</a>
-                          </li>
-                          <li>
-                            <a href="/location/shipping">Shipping Zones</a>
+                            <a href="location/pickup-location">Pickup Location</a>
                           </li>
                         </ul>
                       </details>
@@ -219,13 +225,16 @@ function Sidebar() {
                         </summary>
                         <ul class="pl-2 my-4 space-y-4 text-xs">
                           <li>
-                            <a href="/payment/methods">Payment Methods</a>
+                            <a href="/payment/forex">Forex Rates</a>
                           </li>
                           <li>
-                            <a href="/payment/transactions">Transactions</a>
+                            <a href="/payment/payouts">Payout requests</a>
                           </li>
                           <li>
-                            <a href="/payment/refunds">Refunds</a>
+                            <a href="/payment/payment-transactions">Payment Transactions</a>
+                          </li>
+                          <li>
+                            <a href="/payment/profit-processing">Profit Processing</a>
                           </li>
                         </ul>
                       </details>
@@ -249,15 +258,15 @@ function Sidebar() {
                           </svg>
                         </summary>
                         <ul class="pl-2 my-4 space-y-4 text-xs">
+                          {/* <li>
+                            <a href="/system/plugins">Plugins</a>
+                          </li> */}
                           <li>
-                            <a href="/system/settings">System Settings</a>
+                            <a href="/system/config">Config</a>
                           </li>
-                          <li>
-                            <a href="/system/logs">System Logs</a>
-                          </li>
-                          <li>
-                            <a href="/system/updates">Updates</a>
-                          </li>
+                          {/* <li>
+                            <a href="/system/status">System Status</a>
+                          </li> */}
                         </ul>
                       </details>
                     </li>
@@ -281,14 +290,10 @@ function Sidebar() {
                         </summary>
                         <ul class="pl-2 my-4 space-y-4 text-xs">
                           <li>
-                            <a href="/hr/employees">Employee Directory</a>
+                            <a href="/hr/employees">Manage Employees</a>
                           </li>
-                          <li>
-                            <a href="/hr/payroll">Payroll</a>
-                          </li>
-                          <li>
-                            <a href="/hr/benefits">Benefits</a>
-                          </li>
+                         
+                       
                         </ul>
                       </details>
                     </li>
